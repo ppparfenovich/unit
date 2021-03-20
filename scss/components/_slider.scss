@@ -1,0 +1,42 @@
+.slider {
+    position: relative;
+    width: 770px;
+    margin: 0 auto;
+    button {
+        padding: 0;
+    }
+    &__item {
+        @include flex($fdir: column);
+        p {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+
+.text {
+    font-size: 18px;
+    line-height: 2;
+    color: #000000;
+}
+
+.author {
+    margin-top: 25px;
+    @include flex();
+    &__avatar {
+        margin-right: 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    &__name {
+        text-align: start;
+        font-size: 16px;
+        line-height: 1.25;
+        color: $btnColor;
+        p {
+            font-size: 16px;
+        }
+    }
+}

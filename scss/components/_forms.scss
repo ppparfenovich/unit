@@ -1,0 +1,23 @@
+.header__form {
+    margin-top: 70px;
+    @include flex($jc: center);
+    & > * + * {
+        margin-left: 20px;
+    }
+}
+
+input {
+    width: 240px;
+    padding: 21px 30px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    color: $lightColor;
+    &::placeholder {
+        color: $lightColor;
+    }
+    &:focus {
+        background-color: #000;
+    }
+}

@@ -1,0 +1,96 @@
+
+//======= Header Buttons =======================
+
+.header__button {
+    @include flex($jc: center, $ai: center);
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $lightColor;
+    transition: all 0.3s ease-in;
+    &:hover {
+        background-color: $btnColor;
+    }
+}
+
+//======= Main Buttons =========================
+
+button {
+    padding: 21px 40px;
+    border-radius: 30px;
+    color: $lightColor;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 4px;
+    transition: all 0.3s ease-in;
+
+    &.button__primary {
+        background-color: $btnColor;
+        &:hover {
+            background-color: #02834b;
+        }
+        &:focus {
+            background-color: #004d2b;
+        }
+    }
+
+    &.button__outline {
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0);
+            }
+        &:focus {
+            background-color: #000;
+        }
+    }
+
+    &.button__solid {
+        background: $lightColor;
+        color: $titleColor;
+        &:hover {
+            background-color: #000;
+            color: $lightColor;
+        }
+        &:focus {
+            background-color: #2f2f2f;
+            color: $lightColor;
+        }
+    }
+}
+
+//======= Slider Arrows ============================
+
+.arrow {
+    position: absolute;
+    top: 53px;
+    @include flex($jc: center);
+    width: 54px;
+    height: 54px;
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-position: center;
+    &--left {
+        left: -46px;
+        background-image: url(./../img/icons/arrows/left.svg);
+        transform: translateX(-100%);
+        &:hover {
+            background-color: #02834b;
+            background-image: url(./../img/icons/arrows/left-hover.svg);
+        }
+    }
+    &--right {
+        right: -46px;
+        background-image: url(./../img/icons/arrows/right.svg);
+        transform: translateX(100%);
+        &:hover {
+            background-color: #02834b;
+            background-image: url(./../img/icons/arrows/right-hover.svg);
+        }
+    }
+    &:focus {
+        background-color: #004d2b;
+    }
+}

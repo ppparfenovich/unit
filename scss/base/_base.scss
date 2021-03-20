@@ -1,0 +1,106 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	padding: 0;
+}
+button,
+label {
+	cursor: pointer;
+}
+button {
+	border: none;
+    outline:none;
+}
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+legend {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+input {
+    box-sizing: border-box;
+}
+a,
+a:visited,
+a:hover {
+	text-decoration: none;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	font-weight: inherit;
+	font-size: inherit;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.none {
+	display: none !important;
+}
+
+//=============================================
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	@media (max-width: 1199px) {
+
+	}
+}
+

@@ -1,0 +1,28 @@
+@mixin flex ($jc: space-between, $ai: center, $fdir: row, $fw: wrap) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fdir;
+    flex-wrap: $fw;
+}
+
+@mixin bgOverlay () {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: $overlayColor;
+    }
+    &__content {
+        position: relative;
+        height: 100%;
+        z-index: 10;
+        color: $lightColor;
+    }
+}

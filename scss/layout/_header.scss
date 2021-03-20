@@ -1,0 +1,47 @@
+.header {
+    position: relative;
+    height: 870px;
+    background-image: url("./../img/bg/header-bg.jpg");
+    @include bgOverlay();
+    &__buttons {
+        padding-top: 60px;
+        @include flex();
+    }
+    &__description {
+        @include flex($jc: center, $fdir: column);
+        margin-top: 140px;
+    }
+    &__text {
+        margin-top: 40px;
+        max-width: 730px;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        color: $lightColor;
+    }
+    &__scroll {
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+/* tablet */
+
+@media (max-width: 1199px) {
+
+}
+
+/* Mobile */
+
+@media (max-width: 899px) {
+
+}
+
+/* Mobile XS*/
+
+@media (max-width: 599px) {
+
+}
