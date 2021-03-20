@@ -1,27 +1,5 @@
 
-//======= Header Buttons =======================
 
-.header__button {
-    @include flex($jc: center, $ai: center);
-    padding: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: $lightColor;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 0.3s ease-in;
-    &:hover {
-        background-color: $btnColor;
-    }
-    &--menu {
-        background-image: url(./../img/icons/menu.svg);
-    }
-    &--search {
-        background-image: url(./../img/icons/search.svg);
-    }
-
-}
 
 //======= Main Buttons =========================
 
@@ -68,6 +46,30 @@ button {
             color: $lightColor;
         }
     }
+}
+
+//======= Header Buttons =======================
+
+.header__button {
+    @include flex($jc: center, $ai: center);
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $lightColor;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s ease-in;
+    &:hover {
+        background-color: $btnColor;
+    }
+    &--menu {
+        background-image: url(./../img/icons/menu.svg);
+    }
+    &--search {
+        background-image: url(./../img/icons/search.svg);
+    }
+
 }
 
 //======= Slider Arrows ============================
