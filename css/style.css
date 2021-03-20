@@ -194,12 +194,22 @@ input:focus {
   height: 60px;
   border-radius: 50%;
   background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
 .header__button:hover {
   background-color: #00C470;
+}
+
+.header__button--menu {
+  background-image: url(./../img/icons/menu.svg);
+}
+
+.header__button--search {
+  background-image: url(./../img/icons/search.svg);
 }
 
 button {
