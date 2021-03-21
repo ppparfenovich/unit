@@ -6,45 +6,46 @@
 button {
     padding: 21px 40px;
     border-radius: 30px;
-    color: $lightColor;
-    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
     font-size: 14px;
     letter-spacing: 4px;
+    color: $lightColor;
     transition: all 0.3s ease-in;
+}
 
-    &.button__primary {
-        background-color: $btnColor;
-        &:hover {
-            background-color: #02834b;
-        }
-        &:focus {
-            background-color: #004d2b;
-        }
+.button-primary {
+    background-color: $btnColor;
+    &:hover {
+        background-color: #02834b;
     }
-
-    &.button__outline {
-        background: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0);
-            }
-        &:focus {
-            background-color: #000;
-        }
+    &:focus {
+        background-color: #004d2b;
     }
+}
 
-    &.button__solid {
-        background: $lightColor;
-        color: $titleColor;
-        &:hover {
-            background-color: #000;
-            color: $lightColor;
+.button-outline {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0);
         }
-        &:focus {
-            background-color: #2f2f2f;
-            color: $lightColor;
-        }
+    &:focus {
+        background-color: #000;
+    }
+}
+
+.button-solid {
+    background: $lightColor;
+    color: $titleColor;
+    &:hover {
+        background-color: #000;
+        color: $lightColor;
+    }
+    &:focus {
+        background-color: #2f2f2f;
+        color: $lightColor;
     }
 }
 

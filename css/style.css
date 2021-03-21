@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -34,6 +34,7 @@ html,
 body {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 input,
@@ -176,51 +177,52 @@ input:focus {
 button {
   padding: 21px 40px;
   border-radius: 30px;
-  color: #fff;
-  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
   font-size: 14px;
   letter-spacing: 4px;
+  color: #fff;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
-button.button__primary {
+.button-primary {
   background-color: #00C470;
 }
 
-button.button__primary:hover {
+.button-primary:hover {
   background-color: #02834b;
 }
 
-button.button__primary:focus {
+.button-primary:focus {
   background-color: #004d2b;
 }
 
-button.button__outline {
+.button-outline {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-button.button__outline:hover {
+.button-outline:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0);
 }
 
-button.button__outline:focus {
+.button-outline:focus {
   background-color: #000;
 }
 
-button.button__solid {
+.button-solid {
   background: #fff;
   color: #2E2E2E;
 }
 
-button.button__solid:hover {
+.button-solid:hover {
   background-color: #000;
   color: #fff;
 }
 
-button.button__solid:focus {
+.button-solid:focus {
   background-color: #2f2f2f;
   color: #fff;
 }
@@ -691,6 +693,7 @@ p {
   margin-bottom: 40px;
   font-weight: 500;
   font-size: 22px;
+  letter-spacing: normal;
   text-transform: inherit;
   color: #fff;
 }
