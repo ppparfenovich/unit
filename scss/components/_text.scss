@@ -4,7 +4,15 @@ h1 {
     text-transform: uppercase;
     font-size: 96px;
     line-height: 1;
-}
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 84px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 70px;
+    }
+} 
 
 .title {        //H2
     font-weight: 700;
@@ -12,12 +20,28 @@ h1 {
     letter-spacing: 4px;
     text-transform: uppercase;
     color: $sectionNameColor;
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 14px;    
+    }
 }
 
 .subtitle {     //H3
     font-weight: 700;
     font-size: 48px;
     color: $titleColor;
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 38px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 30px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 26px;
+    }
 }
 
 h4 {

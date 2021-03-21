@@ -4,10 +4,31 @@
     & > * + * {
         margin-left: 20px;
     }
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-top: 50px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+        flex-direction: column;
+        & > * + * {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        button {
+            max-width: 370px;
+            width: 100%;
+        }
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-top: 30px;
+    }
 }
 
 input {
-    width: 240px;
+    max-width: 240px;
+    width: 100%;
     padding: 21px 30px;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 30px;
@@ -19,5 +40,9 @@ input {
     }
     &:focus {
         background-color: #000;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+        max-width: 370px;
     }
 }

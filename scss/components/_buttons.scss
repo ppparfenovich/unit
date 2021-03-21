@@ -1,6 +1,4 @@
 
-
-
 //======= Main Buttons =========================
 
 button {
@@ -105,4 +103,10 @@ button {
     &:focus {
         background-color: #004d2b;
     }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        display: none;
+    }
 }
+

@@ -5,6 +5,7 @@
     button {
         padding: 0;
     }
+
     &__item {
         @include flex($fdir: column);
         p {
@@ -13,7 +14,24 @@
     }
 }
 
-
+.slider__pagination {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    &-item {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: #E1E1E1;
+        // :not(:last-child) {
+        //     margin-right: 10px;
+        // }
+        &--active {
+            background-color: $btnColor;
+        }
+    }
+}
 
 .text {
     font-size: 18px;
@@ -22,7 +40,7 @@
 }
 
 .author {
-    margin-top: 25px;
+    margin-top: 15px;
     @include flex();
     &__avatar {
         margin-right: 20px;
@@ -37,6 +55,56 @@
         color: $btnColor;
         p {
             font-size: 16px;
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: 1199px) {
+    .slider {
+        width: 80%;
+    }
+
+    .text {
+        line-height: 1.5;
+    }
+}
+
+/* Mobile */
+@media (max-width: 899px) {
+    .slider {
+        width: 61.67%;
+    }
+
+    .slider__pagination {
+        bottom: -30px;
+    }
+
+    .text {
+        font-size: 16px;
+    } 
+
+    .author {
+        margin-top: 5px;
+    }
+}
+
+/* Mobile XS */
+@media (max-width: 599px) {
+    .slider {
+        width: 290px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+    
+    .author {
+        &__name {
+            font-size: 14px;
+            p {
+                font-size: 14px;
+            }
         }
     }
 }
