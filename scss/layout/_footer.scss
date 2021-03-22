@@ -18,10 +18,12 @@
         margin-left: 50px;
     }
     &__item {
-        font-weight: 700;
+        font-weight: bold;
         font-size: 16px;
         letter-spacing: 4px;
         text-transform: uppercase;
+        font-family: Montserrat;
+        line-height: 100%;
         color: $lightColor;
         transition: all 0.3s ease-in;
         &:hover {
@@ -31,42 +33,24 @@
 }
 
 .socials {
+    display: flex;
     & > * + * {
         margin-left: 30px;
     }
     &__item {
         width: 48px;
         height: 48px;
+        @include flex($jc: center);
         border-radius: 50%;
         background-color: #C4C4C4;
-        background-repeat: no-repeat;
-        background-position: center;
+
         transition: all 0.3s ease-in;
+
+        &:hover {
+            background-color: $btnColor;
+
+        }
     
-        &--twitter {
-            background-image: url(./../img/icons/socials/twitter.svg);
-            &:hover {
-                background-color: $btnColor;
-            }
-        }
-        &--facebook {
-            background-image: url(./../img/icons/socials/facebook.svg);
-            &:hover {
-                background-color: $btnColor;
-            }
-        }
-        &--instagram {
-            background-image: url(./../img/icons/socials/instagram.svg);
-            &:hover {
-                background-color: $btnColor;
-            }
-        }
-        &--vk {
-            background-image: url(./../img/icons/socials/vk.svg);
-            &:hover {
-                background-color: $btnColor;
-            }
-        }
     }
 }
 
